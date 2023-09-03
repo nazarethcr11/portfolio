@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="home">
+        <div class="header">
+            <div class="logo">
+            <a href="#"><span>Sina</span>Caru</a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></1i>
+                <li><a href="#skills">Skills</a></1i>
+                <li><a href="#portafolio">Portfolio</a></1i>
+                <li><a href="#contact">Contact</a></1li>
+            </ul>
+            <i class="fa fa-bars" id="bars"></i>
+        </div>
+        <div class="hero">
+            <div class="content">
+                <h1>Frontend Developer</h1>
+                <h4>Hello, I'm Silene Casma</h4>
+                <p>Estudiante de Ingeniería de Software de UPC en el octavo ciclo, especializada en desarrollo Frontend. Apasionada por la creación de interfaces atractivas y funcionales.</p>
+                <button onclick="window.open('Curriculum-Vitae-Silene-Nazareth-Casma-Rubio.pdf')">Download CV</button>
+                <div class="icons">
+                    <a href="https://github.com/nazarethcr11"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/silene-casma-rubio-a16742222/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/nazaret.casma"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/silene_ncr/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+        </div>
+        <div class="hero-image">
+            <img src="img/developer2.png">
+            <span><i class="fa-brands fa-android"></i></span>
+            <span><i class="fa-brands fa-angular"></i></span>
+            <span><i class="fa-brands fa-python"></i></span>
+        </div>
+    </div>
+    <script>
+        let menu = document.querySelector('ul');
+        let bars = document.querySelector('.header .fa-bars');
+
+        bars.addEventListener("click", function(){
+            menu.classList.toggle("show");
+        })
+    </script>
+    </div>
+    <!---services-->
+    <section class="services" id="skills">
+        <div class="center-text">
+          <h2>My <span>Skills</span></h2>
+        </div>
+        <div class="services-content">
+          <div class="box">
+            <img src="./img/s-1.svg">
+            <h3>Web Developer</h3>
+            <p>Construyo sitios web interactivos y funcionales para dar vida a tus ideas en línea</p>
+            <a href="#web">View now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <img src="./img/s-2.svg">
+            <h3>Mobile Developer</h3>
+            <p>Diseño y desarrollo aplicaciones móviles que hacen la vida más sencilla y entretenida.</p>
+            <a href="#mobile">View now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="box">
+            <img src="./img/s-3.svg">
+            <h3>UI Designer</h3>
+            <p>Creo interfaces intuitivas y atractivas que mejoran la experiencia del usuario.</p>
+            <a href="#ui">View now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+      </div>
+  </section>
+ <!---portafolio-->
+    <section class="app" id="portafolio">
+        <div class="center-text">
+          <h2>My <span>Portfolio</span></h2>
+        </div>
+        <div class="app-content" id="web">
+            <div class="row">
+              <img src="img/web-1.png">
+              <p>Website Application</p>
+              <h3>Safe Ride Responsive Web Landing Page</h3>
+              <div class="in-text">
+                <div class="price">
+                  <h6>#1</h6>
+                </div>
+                <div class="s-btnn">
+                  <a href="https://github.com/nazarethcr11/SafeRide-LandingPage"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <img src="img/web-2.png">
+              <p>Website Application</p>
+              <h3>Villa Bellavista Responsive Website Page</h3>
+              <div class="in-text">
+                <div class="price">
+                  <h6>#2</h6>
+                </div>
+                <div class="s-btnn">
+                  <a href="https://github.com/VillaBellavista-App"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <img src="img/web-3.png">
+              <p>Website Application</p>
+              <h3>Ksero Responsive Web Landing Page</h3>
+              <div class="in-text">
+                <div class="price">
+                  <h6>#3</h6>
+                </div>
+                <div class="s-btnn">
+                  <a href="https://github.com/nazarethcr11/reworked-landing-page-ksero"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+
+         </div>
+         
+        <div class="app-content" id="mobile">
+          <div class="row">
+            <img src="img/mob-1.png">
+            <p>Mobile Application</p>
+            <h3>4Two (in progress) Application</h3>
+            <div class="in-text">
+              <div class="price">
+                <h6>#1</h6>
+              </div>
+              <div class="s-btnn">
+                <a href="https://github.com/nazarethcr11/ForTwo-App"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="img/mob-2.png">
+            <p>Mobile Application</p>
+            <h3>Smart Home devices Application</h3>
+            <div class="in-text">
+              <div class="price">
+                <h6>#2</h6>
+              </div>
+              <div class="s-btnn">
+                <a href="https://github.com/nazarethcr11/smart-home"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="img/mob-3.png">
+            <p>Mobile Application</p>
+            <h3>Pneumorphism Calculator Application</h3>
+            <div class="in-text">
+              <div class="price">
+                <h6>#3</h6>
+              </div>
+              <div class="s-btnn">
+                <a href="https://github.com/nazarethcr11/mobile_calculator"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+       </div>
+
+       <div class="app-content" id="ui">
+        <div class="row">
+          <img src="img/ui-1.png">
+          <p>Mobile Design</p>
+          <h3>Ksero Mobile UI Design</h3>
+          <div class="in-text">
+            <div class="price">
+              <h6>#1</h6>
+            </div>
+            <div class="s-btnn">
+              <a href="https://www.figma.com/file/5tQrKIW4qry7pvJ7t1gUim/Web-Bellavista?type=design&node-id=5%3A118&mode=design&t=MNqam44YD60wFVFg-1"><i class="fa-brands fa-figma"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/ui-2.png">
+          <p>Website Design</p>
+          <h3>Ksero Website UI Design</h3>
+          <div class="in-text">
+            <div class="price">
+              <h6>#2</h6>
+            </div>
+            <div class="s-btnn">
+              <a href="https://www.figma.com/file/blihb0uO0Zg55y8elhaW1b/Prototype-KSERO?type=design&node-id=607%3A291&mode=design&t=MNqam44YD60wFVFg-1"><i class="fa-brands fa-figma"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <img src="img/ui-3.png">
+            <p>Website Desing</p>
+            <h3>VillaB Website UI Design</h3>
+            <div class="in-text">
+              <div class="price">
+                <h6>#3</h6>
+              </div>
+              <div class="s-btnn">
+                <a href="https://www.figma.com/file/blihb0uO0Zg55y8elhaW1b/Prototype-KSERO?type=design&node-id=0%3A1&mode=design&t=MNqam44YD60wFVFg-1"><i class="fa-brands fa-figma"></i></a>
+              </div>
+            </div>
+          </div>
+
+     </div>
+    </section>
+    <!---contact-->
+    <section class="contact" id="contact">
+      <div class="center-text">
+        <h2>Contact <span>Me</span></h2>
+      </div>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xzblgrgq"
+        method="POST">
+          <input type="text" placeholder="Your name" required name="name">
+          <input type="email" placeholder="Email address.." required name="email">
+          <textarea placeholder="Write Message here.." name="message" id="" cols="30" rows="10" required></textarea>
+          <input type="submit" value="Send Message" class="send-btn">
+        </form>
+      </div>
+    </section>
+    <!---footer-->
+    <div class="footer">
+      <div class="copyright">
+        <p>2023 Silene Casma, All Rights Reserved</p>
+      </div>
+      <a href="#home" class="scroll-top">
+        <i class="fa-solid fa-caret-up"></i>
+      </a>
+    </div>
+    <!---scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--link to js-->
+    <script src="script.js"></script>
+</body>
+</html>
